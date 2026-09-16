@@ -20,6 +20,8 @@
   --radius: 14px;
   --radius-sm: 8px;
   --transition: 0.25s ease;
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
 *,
@@ -34,11 +36,16 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-body);
   color: var(--slate-700);
   line-height: 1.6;
   background: var(--white);
   -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .stat-value, .card h3, .member h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
 }
 
 img {
