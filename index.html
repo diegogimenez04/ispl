@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ingeniería de Sistemas de Procesos y Logística — Grupo de investigación dedicado a la optimización de la cadena de producción y logística.">
+  <title>ISPL — Ingeniería de Sistemas de Procesos y Logística</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231e3a8a'/%3E%3Ctext x='50' y='68' font-size='44' fill='white' text-anchor='middle' font-family='Arial' font-weight='bold'%3EISPL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="#inicio" class="brand">
+        <span class="brand-mark" aria-hidden="true">ISPL</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="#acerca" data-i18n="nav.about">Acerca de</a></li>
+        <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+        <li><a href="#equipo" data-i18n="nav.team">Equipo</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+        <li class="lang-switch">
+          <button class="lang-btn active" data-lang="es" aria-label="Español">ES</button>
+          <span class="lang-divider" aria-hidden="true">/</span>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow" data-i18n="hero.eyebrow">Grupo de investigación</p>
+          <h1 data-i18n="hero.title">Ingeniería de Sistemas de<br><span>Procesos y Logística</span></h1>
+          <p class="hero-sub" data-i18n="hero.tagline">Optimizamos la cadena de producción y la logística mediante ciencia, datos y mejora continua.</p>
+          <div class="hero-actions">
+            <a href="#servicios" class="btn btn-primary" data-i18n="hero.cta_services">Ver servicios</a>
+            <a href="#equipo" class="btn btn-outline" data-i18n="hero.cta_team">Conocer el equipo</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/ispylogistica.png" alt="Optimización de la cadena de producción y logística">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="acerca">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="section-label" data-i18n="about.label">Quiénes somos</p>
+          <h2 class="section-title" data-i18n="about.title">Un grupo enfocado en la eficiencia de la cadena de valor</h2>
+        </div>
+        <div class="about-grid" data-reveal>
+          <div class="about-text">
+            <p class="about-lead" data-i18n="about.lead">Nuestro grupo de investigación aborda la optimización integral de los sistemas de producción y logística, conectando la teoría con soluciones aplicables a la industria.</p>
+            <p data-i18n="about.p1">Combinamos modelado matemático, simulación, análisis de datos y metodologías Lean para identificar oportunidades de mejora y reducir costos, tiempos y desperdicios a lo largo de toda la cadena de suministro.</p>
+            <p data-i18n="about.p2">Trabajamos junto a empresas, universidades y entidades gubernamentales para transferir conocimiento y generar un impacto real en la competitividad de los procesos productivos.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <p class="stat-value">05+</p>
+              <p class="stat-label" data-i18n="about.stat_years">Años de trayectoria</p>
+            </div>
+            <div class="stat">
+              <p class="stat-value">20+</p>
+              <p class="stat-label" data-i18n="about.stat_projects">Proyectos y consultorías</p>
+            </div>
+            <div class="stat">
+              <p class="stat-value">12</p>
+              <p class="stat-label" data-i18n="about.stat_members">Investigadores y colaboradores</p>
+            </div>
+            <div class="stat">
+              <p class="stat-value">98%</p>
+              <p class="stat-label" data-i18n="about.stat_satisfaction">Cliente satisfecho</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="servicios">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="section-label" data-i18n="services.label">Servicios</p>
+          <h2 class="section-title" data-i18n="services.title">Lo que ofrecemos</h2>
+          <p class="section-sub" data-i18n="services.subtitle">Soluciones orientadas a resultados a lo largo de toda la cadena de producción y logística.</p>
+        </div>
+        <div class="cards-grid" data-reveal>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+            </div>
+            <h3 data-i18n="services.one_t">Optimización de procesos</h3>
+            <p data-i18n="services.one_d">Identificamos cuellos de botella y rediseñamos procesos para maximizar el rendimiento y minimizar el desperdicio.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 7h.01M7 17h.01M11 7h6M11 17h6"/></svg>
+            </div>
+            <h3 data-i18n="services.two_t">Planificación de la producción</h3>
+            <p data-i18n="services.two_d">Programación y balanceo de líneas para alinear la oferta con la demanda real del mercado.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><circle cx="6" cy="5" r="2"/><circle cx="18" cy="19" r="2"/><path d="M6 7v10M18 7v10M8 6h8M8 18h8"/></svg>
+            </div>
+            <h3 data-i18n="services.three_t">Cadena de suministro</h3>
+            <p data-i18n="services.three_d">Diseño y gestión de cadenas de suministro eficientes, resilientes y orientadas al cliente.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+            </div>
+            <h3 data-i18n="services.four_t">Lean y mejora continua</h3>
+            <p data-i18n="services.four_d">Implementación de metodologías Lean, Kaizen y sistemas de gestión visual para una mejora sostenida.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><circle cx="12" cy="12" r="4"/><path d="M16 8h5V3"/></svg>
+            </div>
+            <h3 data-i18n="services.five_t">Simulación y modelado</h3>
+            <p data-i18n="services.five_d">Modelos de simulación para anticipar el comportamiento de los sistemas y evaluar escenarios antes de invertir.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+            </div>
+            <h3 data-i18n="services.six_t">Análisis de datos</h3>
+            <p data-i18n="services.six_d">KPIs, analítica avanzada y minería de datos para tomar decisiones basadas en evidencia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="equipo">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="section-label" data-i18n="team.label">Equipo humano</p>
+          <h2 class="section-title" data-i18n="team.title">Las personas detrás de la optimización</h2>
+          <p class="section-sub" data-i18n="team.subtitle">Un equipo interdisciplinario de ingenieros, investigadores y estudiantes comprometidos con la excelencia.</p>
+        </div>
+        <div class="team-grid" data-reveal>
+          <article class="member">
+            <div class="member-avatar">
+              <img src="assets/avatars/member1.svg" alt="">
+            </div>
+            <h3>Maria Analia Rodriguez</h3>
+            <p class="member-role" data-i18n="team.role1">PhD · Coordinadora del grupo</p>
+            <p class="member-bio" data-i18n="team.bio1">Doctora con experiencia en optimización matemática de sistemas de producción y logística.</p>
+          </article>
+          <article class="member">
+            <div class="member-avatar">
+              <img src="assets/avatars/member2.svg" alt="">
+            </div>
+            <h3>Frank Pieda-Jimenez</h3>
+            <p class="member-role" data-i18n="team.role2">PhD · Investigador senior</p>
+            <p class="member-bio" data-i18n="team.bio2">Investigador senior especializado en cadenas de suministro, logística y planificación de la producción.</p>
+          </article>
+          <article class="member">
+            <div class="member-avatar">
+              <img src="assets/avatars/member3.svg" alt="">
+            </div>
+            <h3>Emilia Dussel</h3>
+            <p class="member-role" data-i18n="team.role3">Investigadora de grado</p>
+            <p class="member-bio" data-i18n="team.bio3">Investigadora de grado enfocada en simulación de procesos industriales y análisis de datos para la toma de decisiones.</p>
+          </article>
+          <article class="member">
+            <div class="member-avatar">
+              <img src="assets/avatars/member4.svg" alt="">
+            </div>
+            <h3>Diego Nicolas Gimenez Irusta</h3>
+            <p class="member-role" data-i18n="team.role4">Investigador de grado</p>
+            <p class="member-bio" data-i18n="team.bio4">Investigador de grado que apoya proyectos de mejora continua y la implementación de herramientas Lean en planta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contacto">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="section-label" data-i18n="contact.label">Contacto</p>
+          <h2 class="section-title" data-i18n="contact.title">¿Trabajamos juntos?</h2>
+          <p class="section-sub" data-i18n="contact.subtitle">Si buscas mejorar la eficiencia de tus procesos productivos o logísticos, escríbenos.</p>
+        </div>
+        <div class="contact-grid" data-reveal>
+          <div class="contact-info">
+            <p><strong data-i18n="contact.email_label">Correo:</strong> <a href="mailto:contacto@ispl.org">contacto@ispl.org</a></p>
+            <p><strong data-i18n="contact.phone_label">Teléfono:</strong> +00 000 000 0000</p>
+            <p><strong data-i18n="contact.location_label">Ubicación:</strong> Ciudad, País</p>
+            <div class="contact-social" aria-label="Redes sociales">
+              <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-8.6c0-2.05-.04-4.7-2.86-4.7-2.87 0-3.3 2.24-3.3 4.55V24h-4V8z"/></svg></a>
+              <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.67 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .96-.31 3.16 1.18a11 11 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.4-2.69 5.37-5.25 5.65.41.36.78 1.06.78 2.14v3.17c0 .3.2.67.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+              <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.2h3.68l-8.04 9.19L24 22.8h-7.41l-5.8-7.58-6.63 7.58H.47l8.6-9.83L0 1.2h7.6l5.24 6.93 6.06-6.93z"/></svg></a>
+            </div>
+          </div>
+          <form class="contact-form" data-i18n-form>
+            <div class="form-row">
+              <label for="nombre"><span data-i18n="contact.name">Nombre</span></label>
+              <input type="text" id="nombre" name="nombre" data-i18n-ph="contact.name_ph" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-row">
+              <label for="correo"><span data-i18n="contact.email">Correo electrónico</span></label>
+              <input type="email" id="correo" name="correo" data-i18n-ph="contact.email_ph" placeholder="tu@correo.com" required>
+            </div>
+            <div class="form-row">
+              <label for="mensaje"><span data-i18n="contact.message">Mensaje</span></label>
+              <textarea id="mensaje" name="mensaje" rows="4" data-i18n-ph="contact.message_ph" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">ISPL</p>
+        <p class="footer-tag" data-i18n="footer.tag">Ingeniería de Sistemas de Procesos y Logística</p>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> ISPL. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
