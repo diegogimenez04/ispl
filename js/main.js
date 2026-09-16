@@ -10,7 +10,7 @@
       "nav.contact": "Contacto",
 
       "hero.eyebrow": "Grupo de investigación",
-      "hero.title": "Ingeniería de Sistemas de<br><span>Procesos y Logística</span>",
+      "hero.title": "Ingeniería de Sistemas de <span>Procesos y Logística</span>",
       "hero.tagline": "Optimizamos la cadena de producción y la logística mediante ciencia, datos y mejora continua.",
       "hero.cta_services": "Ver servicios",
       "hero.cta_team": "Conocer el equipo",
@@ -39,7 +39,7 @@
       "services.five_t": "Simulación y modelado",
       "services.five_d": "Modelos de simulación para anticipar el comportamiento de los sistemas y evaluar escenarios antes de invertir.",
       "services.six_t": "Análisis de datos",
-      "services.six_d": "KPIs, analítica avanzada y minería de datos para tomar decisiones basadas en evidencia.",
+      "services.six_d": "KPIs y analítica avanzada para tomar decisiones basadas en evidencia.",
 
       "team.label": "Equipo humano",
       "team.title": "Las personas detrás de la optimización",
@@ -79,7 +79,7 @@
       "nav.contact": "Contact",
 
       "hero.eyebrow": "Research group",
-      "hero.title": "Process Systems and<br><span>Logistics Engineering</span>",
+      "hero.title": "Process Systems and <span>Logistics Engineering</span>",
       "hero.tagline": "We optimize production chains and logistics through science, data, and continuous improvement.",
       "hero.cta_services": "View services",
       "hero.cta_team": "Meet the team",
@@ -108,7 +108,7 @@
       "services.five_t": "Simulation and modeling",
       "services.five_d": "Simulation models to anticipate system behavior and evaluate scenarios before investing.",
       "services.six_t": "Data analytics",
-      "services.six_d": "KPIs, advanced analytics, and data mining to make evidence-based decisions.",
+      "services.six_d": "KPIs and advanced analytics.",
 
       "team.label": "Human team",
       "team.title": "The people behind optimization",
@@ -142,8 +142,8 @@
   };
 
   var STORAGE_KEY = "ispl-lang";
-  var prefersEs = (navigator.language || "es").toLowerCase().startsWith("es");
-  var currentLang = localStorage.getItem(STORAGE_KEY) || (prefersEs ? "es" : "en");
+  var prefersEn = (navigator.language || "en").toLowerCase().startsWith("en");
+  var currentLang = localStorage.getItem(STORAGE_KEY) || (prefersEn ? "en" : "es");
 
   function applyLang(lang) {
     var dict = translations[lang] || translations.es;

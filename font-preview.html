@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preview de fuentes — ISPL</title>
+<style>
+  :root{--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--teal:#0f4c5c;--amber:#e0a458}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,system-ui,sans-serif;background:#f8fafc;color:var(--ink);padding-bottom:6rem}
+  .wrap{max-width:760px;margin:0 auto;padding:2.5rem 1.2rem}
+  h1.pg-title{font-size:1.1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 .25rem}
+  p.pg-sub{font-size:.92rem;color:var(--muted);margin:0 0 2rem}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.6rem 1.6rem 1.4rem;margin-bottom:1.2rem;box-shadow:0 1px 2px rgba(15,23,42,.05)}
+  .card.baseline{border-color:var(--teal);box-shadow:0 0 0 1px var(--teal)}
+  .card-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:1.1rem}
+  .card-name{font-weight:700;font-size:1.02rem}
+  .card-name small{color:var(--muted);font-weight:500}
+  .card-num{flex-shrink:0;background:var(--teal);color:#fff;border-radius:999px;font-size:.72rem;font-weight:700;padding:.2rem .6rem}
+  .card.baseline .card-num{background:#cbd5e1;color:var(--muted)}
+  .sample-title{font-size:1.5rem;line-height:1.18;font-weight:700;margin:0 0 .5rem}
+  .sample-sub{font-size:.98rem;margin:0 0 .8rem;font-weight:500}
+  .sample-body{font-size:.95rem;color:var(--muted);margin:0;max-width:60ch}
+  .user-pick{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:100%;z-index:5;background:rgba(15,23,42,.92);backdrop-filter:blur(6px);color:#fff;padding:.9rem 1.2rem;display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:center;font-size:.95rem}
+  .user-pick b{color:#fbbf24}
+  @media(max-width:520px){.card-head{flex-direction:column;gap:.3rem}.user-pick{flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1 class="pg-title">Preview de tipografías — ISPL</h1>
+  <p class="pg-sub">Elige un número y dime cuál. La 1 es la actual.</p>
+
+  <div class="card baseline">
+    <div class="card-head"><span class="card-name">1 · Space Grotesk <small>(actual)</small></span><span class="card-num">Baseline</span></div>
+    <h2 class="sample-title" style="font-family:Space Grotesk;font-weight:700">Ingeniería de Sistemas de Procesos y Logística</h2>
+    <h3 class="sample-sub" style="font-family:Space Grotesk;font-weight:600">Optimizamos la cadena de producción y logística</h3>
+    <p class="sample-body">Combinamos modelado matemático, simulación y metodologías Lean para reducir costos, tiempos y desperdicios a lo largo de toda la cadena de suministro.</p>
+  </div>
+
+  <div class="card" style="font-family:Plus Jakarta Sans">
+    <div class="card-head"><span class="card-name">2 · Plus Jakarta Sans + Inter</span><span class="card-num">02</span></div>
+    <h2 class="sample-title" style="font-weight:800">Ingeniería de Sistemas de Procesos y Logística</h2>
+    <h3 class="sample-sub" style="font-weight:700">Optimizamos la cadena de producción y logística</h3>
+    <p class="sample-body">Humanista y redondeada, más cálida y amable. Menos "ingrediente de CPU", más accesible y cercano.</p>
+  </div>
+
+  <div class="card" style="font-family:Fraunces">
+    <div class="card-head"><span class="card-name">3 · Fraunces + Inter</span><span class="card-num">03</span></div>
+    <h2 class="sample-title" style="font-weight:650">Ingeniería de Sistemas de Procesos y Logística</h2>
+    <h3 class="sample-sub" style="font-weight:600">Optimizamos la cadena de producción y logística</h3>
+    <p class="sample-body">Serif editorial con personalidad y contraste generoso. Sofisticado, culto, con aroma a publicación, no a plantilla.</p>
+  </div>
+
+  <div class="card" style="font-family:Source Serif 4">
+    <div class="card-head"><span class="card-name">4 · Source Serif 4 + Inter</span><span class="card-num">04</span></div>
+    <h2 class="sample-title" style="font-weight:700">Ingeniería de Sistemas de Procesos y Logística</h2>
+    <h3 class="sample-sub" style="font-weight:600">Optimizamos la cadena de producción y logística</h3>
+    <p class="sample-body">Serif académica neutral y legible. Seria, confiable, institucional. El look de papel de investigación formal.</p>
+  </div>
+
+  <div class="card" style="font-family:IBM Plex Sans">
+    <div class="card-head"><span class="card-name">5 · IBM Plex Sans + Plex Mono <small>(etiquetas)</small></span><span class="card-num">05</span></div>
+    <h2 class="sample-title" style="font-weight:600">Ingeniería de Sistemas de Procesos y Logística</h2>
+    <h3 class="sample-sub" style="font-family:IBM Plex Mono;font-weight:500;letter-spacing:.04em">OPTIMIZAMOS LA CADENA DE PRODUCCIÓN Y LOGÍSTICA</h3>
+    <p class="sample-body">Industrial y técnica, con etiquetas tipo terminal. Sensación de sobremesa de ingeniería, datos y documentación.</p>
+  </div>
+
+  <div class="card" style="font-family:Archivo">
+    <div class="card-head"><span class="card-name">6 · Archivo (expanded) + Inter</span><span class="card-num">06</span></div>
+    <h2 class="sample-title" style="font-weight:800;font-stretch:expanded">Ingeniería de Sistemas de Procesos y Logística</h2>
+    <h3 class="sample-sub" style="font-weight:600;font-stretch:expanded">Optimizamos la cadena de producción y logística</h3>
+    <p class="sample-body">Grotesca ancha de estilo revistero/publicitario. Imponente y moderna, con carácter editorial de gran formato.</p>
+  </div>
+
+  <div class="card" style="font-family:Sora">
+    <div class="card-head"><span class="card-name">7 · Sora + Inter</span><span class="card-num">07</span></div>
+    <h2 class="sample-title" style="font-weight:700">Ingeniería de Sistemas de Procesos y Logística</h2>
+    <h3 class="sample-sub" style="font-weight:600">Optimizamos la cadena de producción y logística</h3>
+    <p class="sample-body">Geométrica moderna y amable, con curvas más suaves que Space Grotesk. Contemporáneo pero no frío.</p>
+  </div>
+
+  <div class="card" style="font-family:Literata">
+    <div class="card-head"><span class="card-name">8 · Literata + Inter</span><span class="card-num">08</span></div>
+    <h2 class="sample-title" style="font-weight:650">Ingeniería de Sistemas de Procesos y Logística</h2>
+    <h3 class="sample-sub" style="font-weight:600">Optimizamos la cadena de producción y logística</h3>
+    <p class="sample-body">Serif moderna pensada para pantalla, mezcla entre académica y periodística. Muy legible, con cierto pulso.</p>
+  </div>
+
+  <div class="card" style="font-family:Space Mono">
+    <div class="card-head"><span class="card-name">9 · Space Mono + Inter <small>(para casi todo)</small></span><span class="card-num">09</span></div>
+    <h2 class="sample-title" style="font-weight:700;letter-spacing:.01em">INGENIERÍA DE SISTEMAS DE PROCESOS Y LOGÍSTICA</h2>
+    <h3 class="sample-sub" style="font-family:Space Mono;font-weight:400">Optimizamos la cadena de producción y logística</h3>
+    <p class="sample-body">Monoespaciada en titulares: look técnico-matemático muy distintivo. Arriesgado, pero inconfundible.</p>
+  </div>
+</div>
+
+<div class="user-pick">
+  <span>Selecciona una como <b>1</b>…<b>9</b> y dímela → yo la aplico a la página real.</span>
+</div>
+</body>
+</html>
