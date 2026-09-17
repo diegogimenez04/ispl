@@ -1,9 +1,6 @@
 name = "ispl-smtp"
 main = "src/index.js"
 compatibility_date = "2024-11-01"
-compatibility_flags = ["nodejs_compat"]
 
-# Secrets (NO editar aquí; se setean con `wrangler secret put`):
-#   SMTP_USER  -> isplylogistica@gmail.com
-#   SMTP_PASS  -> App Password de 16 dígitos (Gmail, con 2FA)
-#   DEST_EMAIL -> isplylogistica@gmail.com
+# DOMINIO SCRIPT del propio worker NO se expone: el fetch viene desde el worker como mto al sitio.
+# El sitio pone en un secreto la URL del worker (WORKER_URL en js/main.js).
