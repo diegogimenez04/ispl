@@ -1,0 +1,9 @@
+# Copiá este archivo a "worker/.dev.vars" para probar el envío de correos en local.
+#   cp worker/.dev.vars.example worker/.dev.vars
+# NUNCA subas ".dev.vars" al repo (ya está en .gitignore).
+#
+# Los valores son los mismos que usás en Cloudflare:
+#   RESEND_API_KEY -> tu API key de Resend (empieza con "re_")
+#   DEST_EMAIL     -> ispylogistica@gmail.com
+RESEND_API_KEY=re_tu_api_key_de_resend
+DEST_EMAIL=ispylogistica@gmail.com

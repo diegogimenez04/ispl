@@ -6,7 +6,7 @@
   <meta name="description" content="Ingeniería de Sistemas de Procesos y Logística — Grupo de investigación dedicado a la optimización de la cadena de producción y logística.">
   <title>ISPL — Ingeniería de Sistemas de Procesos y Logística</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231e3a8a'/%3E%3Ctext x='50' y='68' font-size='44' fill='white' text-anchor='middle' font-family='Arial' font-weight='bold'%3EISPL%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -200,7 +200,7 @@
         </div>
         <div class="contact-grid" data-reveal>
           <div class="contact-info">
-            <p><strong data-i18n="contact.email_label">Correo:</strong> <a href="mailto:contacto@ispl.org">contacto@ispl.org</a></p>
+            <p><strong data-i18n="contact.email_label">Correo:</strong> <a href="mailto:ispylogistica@gmail.com">ispylogistica@gmail.com</a></p>
             <p><strong data-i18n="contact.phone_label">Teléfono:</strong> +00 000 000 0000</p>
             <p><strong data-i18n="contact.location_label">Ubicación:</strong> Ciudad, País</p>
             <div class="contact-social" aria-label="Redes sociales">
@@ -239,6 +239,20 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <div class="modal" id="form-modal" hidden>
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-text">
+      <button class="modal-close" type="button" data-modal-close aria-label="Cerrar">&times;</button>
+      <div class="modal-icon" aria-hidden="true">
+        <svg class="icon-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        <svg class="icon-error" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+      </div>
+      <h3 class="modal-title" id="modal-title">¡Mensaje enviado!</h3>
+      <p class="modal-text" id="modal-text">Gracias por escribirnos. Tu correo se envió correctamente y te responderemos a la brevedad.</p>
+      <button class="btn btn-primary modal-ok" type="button" data-modal-close data-i18n="modal.close">Entendido</button>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>

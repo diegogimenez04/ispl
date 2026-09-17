@@ -68,7 +68,18 @@
       "contact.submit": "Enviar mensaje",
       "contact.sending": "Enviando…",
       "contact.sent": "¡Mensaje enviado! Te responderemos a la brevedad.",
-      "contact.error": "No se pudo enviar. Intentá de nuevo o escribinos a contacto@ispl.org.",
+      "contact.error": "No se pudo enviar. Intentá de nuevo o escribinos a ispylogistica@gmail.com.",
+      "modal.sent_title": "¡Mensaje enviado!",
+      "modal.sent_text": "Gracias por escribirnos. Tu correo se envió correctamente y te responderemos a la brevedad.",
+      "modal.error_title": "No se pudo enviar",
+      "modal.error_text": "Hubo un problema al enviar el mensaje. Revisá tu conexión e intentá de nuevo, o escribinos directamente.",
+      "modal.close": "Entendido",
+      "modal.err_network": "No se pudo conectar con el servidor de correo. Si estás probando en local, verificá que el worker esté corriendo (wrangler dev).",
+      "modal.err_config": "El servidor no tiene las credenciales configuradas. En local, revisá worker/.dev.vars (RESEND_API_KEY y DEST_EMAIL).",
+      "modal.err_send": "El servicio de correo rechazó el envío.",
+      "modal.err_input": "Revisá los datos del formulario e intentá de nuevo.",
+      "modal.err_origin": "El servidor no permite el origen de esta página.",
+      "modal.err_notfound": "El formulario apunta a una URL incorrecta del servidor (falta /api/send).",
 
       "footer.tag": "Ingeniería de Sistemas de Procesos y Logística",
       "footer.rights": "Todos los derechos reservados."
@@ -138,6 +149,20 @@
       "contact.message": "Message",
       "contact.message_ph": "Tell us about your project...",
       "contact.submit": "Send message",
+      "contact.sending": "Sending…",
+      "contact.sent": "Message sent! We'll get back to you shortly.",
+      "contact.error": "Couldn't send. Please try again or email us at ispylogistica@gmail.com.",
+      "modal.sent_title": "Message sent!",
+      "modal.sent_text": "Thanks for reaching out. Your email was sent successfully and we'll get back to you shortly.",
+      "modal.error_title": "Couldn't send your message",
+      "modal.error_text": "Something went wrong while sending. Check your connection and try again, or email us directly.",
+      "modal.close": "Got it",
+      "modal.err_network": "Couldn't reach the mail server. If you're testing locally, make sure the worker is running (wrangler dev).",
+      "modal.err_config": "The server has no credentials configured. Locally, check worker/.dev.vars (RESEND_API_KEY and DEST_EMAIL).",
+      "modal.err_send": "The mail service rejected the message.",
+      "modal.err_input": "Please review the form fields and try again.",
+      "modal.err_origin": "The server doesn't allow this page's origin.",
+      "modal.err_notfound": "The form is pointing to a wrong server URL (missing /api/send).",
 
       "footer.tag": "Process Systems and Logistics Engineering",
       "footer.rights": "All rights reserved."
@@ -266,12 +291,62 @@
     yearEl.textContent = new Date().getFullYear();
   }
 
-  /* ---------- Contact form -> Worker SMTP ---------- */
+  /* ---------- Aviso modal (envío de correo) ---------- */
 
-  var isLocal = location.origin && location.origin.indexOf("localhost") !== -1;
+  var modal = document.getElementById("form-modal");
+  var modalTitle = document.getElementById("modal-title");
+  var modalText = document.getElementById("modal-text");
+
+  function t(key) {
+    var dict = translations[currentLang] || translations.es;
+    return dict[key] || key;
+  }
+
+  function openModal(state, message) {
+    if (!modal) return;
+    var ok = state === "ok";
+    modalTitle.textContent = t(ok ? "modal.sent_title" : "modal.error_title");
+    modalText.textContent = message || t(ok ? "modal.sent_text" : "modal.error_text");
+    modal.classList.toggle("modal-error", !ok);
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+    var okBtn = modal.querySelector(".modal-ok");
+    if (okBtn) okBtn.focus();
+  }
+
+  function describeError(data, status) {
+    var code = data && data.error;
+    if (code === "server_misconfigured") return t("modal.err_config");
+    if (code === "invalid_input") return t("modal.err_input");
+    if (code === "forbidden") return t("modal.err_origin");
+    if (code === "not_found") return t("modal.err_notfound");
+    if (code === "smtp_failed") {
+      return t("modal.err_send") + (data.detail ? " (" + data.detail + ")" : "");
+    }
+    return t("modal.error_text") + (status ? " [" + status + "]" : "");
+  }
+
+  function closeModal() {
+    if (!modal) return;
+    modal.hidden = true;
+    document.body.classList.remove("modal-open");
+  }
+
+  if (modal) {
+    modal.querySelectorAll("[data-modal-close]").forEach(function (el) {
+      el.addEventListener("click", closeModal);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !modal.hidden) closeModal();
+    });
+  }
+
+  /* ---------- Contact form -> Worker SMTP/Resend ---------- */
+
+  var isLocal = location.hostname === "localhost" || location.hostname === "127.0.0.1";
   var WORKER_URL = isLocal
-    ? "http://localhost:8787" /* wrangler dev: worker local en puerto 8787 */
-    : "https://ispl-smtp.ispl.workers.dev";
+    ? "http://localhost:8787/api/send" /* wrangler dev: worker local en puerto 8787 */
+    : "https://ispl-smtp.ispl.workers.dev/api/send";
 
   var form = document.querySelector(".contact-form");
   if (form) {
@@ -287,12 +362,9 @@
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      if (submit) submit.disabled = true     ;
-      var action = currentLang === "en" ? "contact.sending" : "contact.sending";
-      var sendingKey = t(action);
-      var statusKey = "contact.sending";
-      showStatus(statusEl, statusKey, "sending");
-      if (submit) submit.textContent = sendingKey;
+      if (submit) submit.disabled = true;
+      showStatus(statusEl, "contact.sending", "sending");
+      if (submit) submit.textContent = t("contact.sending");
 
       var payload = {
         name: form.querySelector("#nombre").value,
@@ -306,22 +378,31 @@
         body: JSON.stringify(payload),
       })
         .then(function (res) {
-          return res.json().then(function (data) {
-            return { ok: res.ok, data: data };
-          });
+          return res
+            .json()
+            .catch(function () {
+              return {};
+            })
+            .then(function (data) {
+              return { ok: res.ok, status: res.status, data: data };
+            });
         })
         .then(function (result) {
           if (result.ok && result.data.ok) {
             showStatus(statusEl, "contact.sent", "ok");
             form.reset();
-            if (submit) submit.textContent = originalSubmit;
+            openModal("ok");
           } else {
+            console.error("[ISPL] Error del worker:", result.status, result.data);
             showStatus(statusEl, "contact.error", "error");
-            if (submit) submit.textContent = originalSubmit;
+            openModal("error", describeError(result.data, result.status));
           }
+          if (submit) submit.textContent = originalSubmit;
         })
-        .catch(function () {
+        .catch(function (err) {
+          console.error("[ISPL] No se pudo conectar con el worker:", err);
           showStatus(statusEl, "contact.error", "error");
+          openModal("error", t("modal.err_network"));
           if (submit) submit.textContent = originalSubmit;
         })
         .finally(function () {
@@ -331,8 +412,7 @@
   }
 
   function showStatus(el, key, state) {
-    var dict = translations[currentLang] || translations.es;
-    el.textContent = dict[key] || key;
+    el.textContent = t(key);
     el.className = "form-status " + state;
   }
 })();

@@ -1,2 +1,11 @@
 # Windows descarga por internet (streams ADS)
 *:Zone.Identifier
+
+# Secretos locales de Wrangler (NUNCA subir)
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+
+# Caché/estado local de Wrangler
+.wrangler/
+node_modules/

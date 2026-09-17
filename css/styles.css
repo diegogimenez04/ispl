@@ -786,3 +786,158 @@ a {
     text-align: center;
   }
 }
+
+/* ---------- Estado del formulario de contacto ---------- */
+
+.form-status {
+  margin: 0.85rem 0 0;
+  font-size: 0.9rem;
+  min-height: 1.2em;
+}
+
+.form-status.ok {
+  color: #15803d;
+}
+
+.form-status.error {
+  color: #b91c1c;
+}
+
+.form-status.sending {
+  color: var(--slate-500);
+}
+
+/* ---------- Modal de confirmación (envío de correo) ---------- */
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal[hidden] {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 47, 60, 0.55);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  animation: modal-fade 0.2s ease;
+}
+
+.modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 2rem 1.75rem 1.75rem;
+  text-align: center;
+  animation: modal-pop 0.25s ease;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.7rem;
+  border: 0;
+  background: transparent;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--slate-500);
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.modal-close:hover {
+  color: var(--slate-900);
+}
+
+.modal-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue-100);
+  color: var(--blue-700);
+}
+
+.modal-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.modal-icon .icon-error {
+  display: none;
+}
+
+.modal.modal-error .modal-icon {
+  background: #fde8e8;
+  color: #b91c1c;
+}
+
+.modal.modal-error .modal-icon .icon-ok {
+  display: none;
+}
+
+.modal.modal-error .modal-icon .icon-error {
+  display: block;
+}
+
+.modal-title {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--slate-900);
+}
+
+.modal-text {
+  margin: 0 0 1.5rem;
+  color: var(--slate-600);
+}
+
+.modal-ok {
+  width: 100%;
+}
+
+@keyframes modal-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-pop {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal-backdrop,
+  .modal-card {
+    animation: none;
+  }
+}

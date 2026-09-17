@@ -4,7 +4,13 @@
 //   DEST_EMAIL      → ispylogistica@gmail.com
 const SITE_ORIGIN = "https://diegogimenez04.github.io";
 
-const ALLOWED_ORIGINS = new Set([SITE_ORIGIN]);
+const ALLOWED_ORIGINS = new Set([
+  SITE_ORIGIN,
+  "http://localhost:8787", // wrangler dev (worker local)
+  "http://127.0.0.1:8787",
+  "http://localhost:8080", // python -m http.server (front local)
+  "http://127.0.0.1:8080",
+]);
 
 function corsHeaders(origin) {
   return {
@@ -48,7 +54,9 @@ export default {
     }
 
     const url = new URL(request.url);
-    if (request.method !== "POST" || url.pathname !== "/api/send") {
+    const path = url.pathname.replace(/\/+$/, "") || "/";
+    const isSendPath = path === "/" || path === "/api/send";
+    if (request.method !== "POST" || !isSendPath) {
       return json({ error: "not_found" }, 404, headers);
     }
 

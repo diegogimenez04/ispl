@@ -1,0 +1,10 @@
+{
+  "name": "ispl-main",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "node tools/serve.mjs 8080",
+    "worker": "npm --prefix worker run dev"
+  }
+}
