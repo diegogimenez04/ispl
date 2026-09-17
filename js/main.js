@@ -56,6 +56,7 @@
       "demos.subtitle": "Visualizaciones reales de los modelos corriendo sobre datos de planta.",
       "demos.one_caption": "Simulador de depósito — ocupación hora a hora y alertas de quiebre.",
       "demos.two_caption": "Optimizador de carga de camiones — plan por eje y ocupación de bodega.",
+      "demos.full": "Ver demo completa (3 min)",
 
       "team.label": "Equipo humano",
       "team.title": "Las personas detrás de la optimización",
@@ -155,6 +156,7 @@
       "demos.subtitle": "Real visualizations of the models running on plant data.",
       "demos.one_caption": "Warehouse simulator — hour-by-hour occupancy and stockout alerts.",
       "demos.two_caption": "Truck loading optimizer — axle plan and hold occupancy.",
+      "demos.full": "Watch full demo (3 min)",
 
       "team.label": "Human team",
       "team.title": "The people behind optimization",
