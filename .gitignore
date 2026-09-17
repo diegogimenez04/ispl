@@ -12,3 +12,6 @@ node_modules/
 
 # Documentos fuente para RAG (no subir)
 rag/
+
+# Videos originales sin comprimir (los comprimidos viven en assets/demos/)
+assets/videos/
