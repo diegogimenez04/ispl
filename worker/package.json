@@ -1,0 +1,16 @@
+{
+  "name": "ispl-smtp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.9"
+  },
+  "devDependencies": {
+    "wrangler": "^3.99.0"
+  }
+}

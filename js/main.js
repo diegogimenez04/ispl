@@ -66,6 +66,9 @@
       "contact.message": "Mensaje",
       "contact.message_ph": "Cuéntanos sobre tu proyecto...",
       "contact.submit": "Enviar mensaje",
+      "contact.sending": "Enviando…",
+      "contact.sent": "¡Mensaje enviado! Te responderemos a la brevedad.",
+      "contact.error": "No se pudo enviar. Intentá de nuevo o escribinos a contacto@ispl.org.",
 
       "footer.tag": "Ingeniería de Sistemas de Procesos y Logística",
       "footer.rights": "Todos los derechos reservados."
@@ -263,20 +266,70 @@
     yearEl.textContent = new Date().getFullYear();
   }
 
-  /* ---------- Contact form (demo only) ---------- */
+  /* ---------- Contact form -> Worker SMTP ---------- */
+
+  var WORKER_URL = "https://ispl-smtp.YOUR_SUBDOMAIN.workers.dev"; /* TODO: reemplazar tras `wrangler deploy` */
 
   var form = document.querySelector(".contact-form");
   if (form) {
+    var submit = form.querySelector('button[type="submit"]');
+    var originalSubmit = submit ? submit.textContent : "";
+    var statusEl = document.createElement("p");
+    statusEl.className = "form-status";
+    statusEl.setAttribute("role", "status");
+    statusEl.setAttribute("aria-live", "polite");
+    if (submit) {
+      submit.parentNode.insertBefore(statusEl, submit.nextSibling);
+    }
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      var submit = form.querySelector('button[type="submit"]');
-      var original = submit.textContent;
-      var more = currentLang === "en" ? "Message sent" : "Mensaje enviado";
-      submit.textContent = more;
-      form.reset();
-      setTimeout(function () {
-        submit.textContent = original;
-      }, 3000);
+      if (submit) submit.disabled = true     ;
+      var action = currentLang === "en" ? "contact.sending" : "contact.sending";
+      var sendingKey = t(action);
+      var statusKey = "contact.sending";
+      showStatus(statusEl, statusKey, "sending");
+      if (submit) submit.textContent = sendingKey;
+
+      var payload = {
+        name: form.querySelector("#nombre").value,
+        email: form.querySelector("#correo").value,
+        message: form.querySelector("#mensaje").value,
+      };
+
+      fetch(WORKER_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      })
+        .then(function (res) {
+          return res.json().then(function (data) {
+            return { ok: res.ok, data: data };
+          });
+        })
+        .then(function (result) {
+          if (result.ok && result.data.ok) {
+            showStatus(statusEl, "contact.sent", "ok");
+            form.reset();
+            if (submit) submit.textContent = originalSubmit;
+          } else {
+            showStatus(statusEl, "contact.error", "error");
+            if (submit) submit.textContent = originalSubmit;
+          }
+        })
+        .catch(function () {
+          showStatus(statusEl, "contact.error", "error");
+          if (submit) submit.textContent = originalSubmit;
+        })
+        .finally(function () {
+          if (submit) submit.disabled = false;
+        });
     });
+  }
+
+  function showStatus(el, key, state) {
+    var dict = translations[currentLang] || translations.es;
+    el.textContent = dict[key] || key;
+    el.className = "form-status " + state;
   }
 })();

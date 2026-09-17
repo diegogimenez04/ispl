@@ -1,0 +1,9 @@
+name = "ispl-smtp"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Secrets (NO editar aquí; se setean con `wrangler secret put`):
+#   SMTP_USER  -> isplylogistica@gmail.com
+#   SMTP_PASS  -> App Password de 16 dígitos (Gmail, con 2FA)
+#   DEST_EMAIL -> isplylogistica@gmail.com
