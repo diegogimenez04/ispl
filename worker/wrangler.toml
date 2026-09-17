@@ -2,5 +2,6 @@ name = "ispl-smtp"
 main = "src/index.js"
 compatibility_date = "2024-11-01"
 
-# DOMINIO SCRIPT del propio worker NO se expone: el fetch viene desde el worker como mto al sitio.
-# El sitio pone en un secreto la URL del worker (WORKER_URL en js/main.js).
+# Secrets (NO editar aquí; se setean con `wrangler secret put`):
+#   RESEND_API_KEY -> key_xxx de https://resend.com/api-keys
+#   DEST_EMAIL     -> isplylogistica@gmail.com
