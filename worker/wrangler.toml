@@ -4,4 +4,4 @@ compatibility_date = "2024-11-01"
 
 # Secrets (NO editar aquí; se setean con `wrangler secret put`):
 #   RESEND_API_KEY -> key_xxx de https://resend.com/api-keys
-#   DEST_EMAIL     -> isplylogistica@gmail.com
+#   DEST_EMAIL     -> ispylogistica@gmail.com

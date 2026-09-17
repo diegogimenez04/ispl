@@ -1,7 +1,7 @@
 // ISPL → Resend (HTTP API). Sin SMTP, sin deps.
 // Secretos (wrangler secret put, NUNCA en el repo):
 //   RESEND_API_KEY  → key `re_...` (una sola vez, solo en Cloudflare)
-//   DEST_EMAIL      → isplylogistica@gmail.com
+//   DEST_EMAIL      → ispylogistica@gmail.com
 const SITE_ORIGIN = "https://diegogimenez04.github.io";
 
 const ALLOWED_ORIGINS = new Set([SITE_ORIGIN]);
