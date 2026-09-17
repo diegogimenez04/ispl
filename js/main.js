@@ -322,6 +322,37 @@
     yearEl.textContent = new Date().getFullYear();
   }
 
+  /* ---------- Demos: reproducir al entrar en pantalla ---------- */
+
+  var demoVideos = document.querySelectorAll(".video-item video");
+  if (demoVideos.length) {
+    demoVideos.forEach(function (video) {
+      video.muted = true;
+    });
+
+    if ("IntersectionObserver" in window) {
+      var videoObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          var video = entry.target;
+          if (entry.isIntersecting) {
+            var playing = video.play();
+            if (playing && playing.catch) playing.catch(function () {});
+          } else {
+            video.pause();
+          }
+        });
+      }, { threshold: 0.5 });
+      demoVideos.forEach(function (video) {
+        videoObserver.observe(video);
+      });
+    } else {
+      demoVideos.forEach(function (video) {
+        var playing = video.play();
+        if (playing && playing.catch) playing.catch(function () {});
+      });
+    }
+  }
+
   /* ---------- Aviso modal (envío de correo) ---------- */
 
   var modal = document.getElementById("form-modal");
