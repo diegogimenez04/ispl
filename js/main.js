@@ -170,8 +170,7 @@
   };
 
   var STORAGE_KEY = "ispl-lang";
-  var prefersEn = (navigator.language || "en").toLowerCase().startsWith("en");
-  var currentLang = localStorage.getItem(STORAGE_KEY) || (prefersEn ? "en" : "es");
+  var currentLang = localStorage.getItem(STORAGE_KEY) || "es";
 
   function applyLang(lang) {
     var dict = translations[lang] || translations.es;
