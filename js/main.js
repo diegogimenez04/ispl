@@ -268,7 +268,7 @@
 
   /* ---------- Contact form -> Worker SMTP ---------- */
 
-  var WORKER_URL = "https://ispl-smtp.YOUR_SUBDOMAIN.workers.dev"; /* TODO: reemplazar tras `wrangler deploy` */
+  var WORKER_URL = "https://ispl-smtp.ispl.workers.dev";
 
   var form = document.querySelector(".contact-form");
   if (form) {
