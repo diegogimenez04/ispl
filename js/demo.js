@@ -5,7 +5,7 @@
     es: {
       "demo.back": "← Volver a las demos",
       "demo.label": "Demos",
-      "demo.title": "Así se ve la herramienta en acción",
+      "demo.title": "Así se ven las herramientas en acción",
       "demo.subtitle": "Visualizaciones reales de los modelos corriendo sobre datos de planta.",
       "demo.sim_title": "Simulador de depósito",
       "demo.sim_desc": "Simula el depósito hora a hora y anticipa el faltante de espacio y los quiebres de stock. En el caso de una embotelladora detectó, siete horas antes, que el plan pedía 24 pallets y solo había 15.",
@@ -17,7 +17,7 @@
     en: {
       "demo.back": "← Back to demos",
       "demo.label": "Demos",
-      "demo.title": "See the tool in action",
+      "demo.title": "See the tools in action",
       "demo.subtitle": "Real visualizations of the models running on plant data.",
       "demo.sim_title": "Warehouse simulator",
       "demo.sim_desc": "Simulates the warehouse hour by hour and anticipates space shortages and stockouts. In a bottler's case, it detected seven hours ahead that the plan called for 24 pallets and only 15 were available.",

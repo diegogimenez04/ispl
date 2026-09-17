@@ -52,7 +52,7 @@
       "cases.three_d": "Caso: fábrica de motores eléctricos. Red real de 7 plantas y 27 clientes con 50 tipos de motor: el stock de seguridad se concentró en 2 puntos (en lugar de uno por cliente) y se sumó un taller de reparación para cubrir fallas críticas.",
 
       "demos.label": "Demos",
-      "demos.title": "Así se ve la herramienta en acción",
+      "demos.title": "Así se ven las herramientas en acción",
       "demos.subtitle": "Visualizaciones reales de los modelos corriendo sobre datos de planta.",
       "demos.one_caption": "Simulador de depósito — ocupación hora a hora y alertas de quiebre.",
       "demos.two_caption": "Optimizador de carga de camiones — plan por eje y ocupación de bodega.",
@@ -152,7 +152,7 @@
       "cases.three_d": "Case: electric motor factory. Real network of 7 plants and 27 customers with 50 motor types: safety stock was concentrated at 2 points (instead of one per customer) and a repair workshop was added to cover critical failures.",
 
       "demos.label": "Demos",
-      "demos.title": "See the tool in action",
+      "demos.title": "See the tools in action",
       "demos.subtitle": "Real visualizations of the models running on plant data.",
       "demos.one_caption": "Warehouse simulator — hour-by-hour occupancy and stockout alerts.",
       "demos.two_caption": "Truck loading optimizer — axle plan and hold occupancy.",
