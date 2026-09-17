@@ -9,3 +9,6 @@
 # Caché/estado local de Wrangler
 .wrangler/
 node_modules/
+
+# Documentos fuente para RAG (no subir)
+rag/
