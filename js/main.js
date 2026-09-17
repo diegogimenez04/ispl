@@ -9,7 +9,7 @@
       "nav.team": "Equipo",
       "nav.contact": "Contacto",
 
-      "hero.eyebrow": "Grupo de investigación",
+      "hero.eyebrow": "Optimización aplicada a la industria",
       "hero.title": "Ingeniería de Sistemas de <span>Procesos y Logística</span>",
       "hero.tagline": "Optimizamos la cadena de producción y la logística mediante ciencia, datos y mejora continua.",
       "hero.cta_services": "Ver servicios",
@@ -109,7 +109,7 @@
       "nav.team": "Team",
       "nav.contact": "Contact",
 
-      "hero.eyebrow": "Research group",
+      "hero.eyebrow": "Optimization applied to industry",
       "hero.title": "Process Systems and <span>Logistics Engineering</span>",
       "hero.tagline": "We optimize production chains and logistics through science, data, and continuous improvement.",
       "hero.cta_services": "View services",
