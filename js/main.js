@@ -69,6 +69,8 @@
       "team.bio3": "Licenciada en Matemática y candidata a PhD. Combina modelado matemático y simulación de procesos industriales para la toma de decisiones.",
       "team.role4": "Licenciado en Ciencias de la Computación · Candidato a PhD",
       "team.bio4": "Licenciado en Ciencias de la Computación y candidato a PhD. Desarrolla herramientas computacionales, modelos de optimización y análisis de datos aplicados a problemas de producción y logística.",
+      "team.role5": "Estudiante de Ciencias de la Computación · Tesis de licenciatura en curso",
+      "team.bio5": "Estudiante de Ciencias de la Computación. Actualmente desarrolla su tesis de licenciatura sobre explicabilidad de los resultados de modelos de optimización.",
 
       "contact.label": "Contacto",
       "contact.title": "¿Trabajamos juntos?",
@@ -169,6 +171,8 @@
       "team.bio3": "Holds a B.Sc. in Mathematics and is a PhD candidate, combining mathematical modeling and simulation of industrial processes for decision-making.",
       "team.role4": "B.Sc. in Computer Science · PhD candidate",
       "team.bio4": "Holds a B.Sc. in Computer Science and is a PhD candidate, building computational tools, optimization models, and data analytics applied to production and logistics problems.",
+      "team.role5": "Computer Science student · Bachelor's thesis in progress",
+      "team.bio5": "Computer Science student currently working on his bachelor's thesis on explainability of optimization model results.",
 
       "contact.label": "Contact",
       "contact.title": "Shall we work together?",

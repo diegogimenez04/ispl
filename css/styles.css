@@ -474,12 +474,15 @@ a {
 /* ---------- Team ---------- */
 
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
 }
 
 .member {
+  flex: 1 1 240px;
+  max-width: 300px;
   text-align: center;
   background: var(--white);
   border: 1px solid var(--slate-200);
@@ -695,9 +698,6 @@ a {
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 860px) {
@@ -774,9 +774,6 @@ a {
     display: none;
   }
   .cards-grid {
-    grid-template-columns: 1fr;
-  }
-  .team-grid {
     grid-template-columns: 1fr;
   }
   .about-stats {
