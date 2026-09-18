@@ -14,6 +14,7 @@
       "hero.tagline": "Optimizamos la cadena de producción y la logística mediante ciencia, datos y mejora continua.",
       "hero.cta_services": "Ver servicios",
       "hero.cta_team": "Conocer el equipo",
+      "hero.cta_demos": "Ver demos",
 
       "about.label": "Quiénes somos",
       "about.title": "Un grupo de investigación en optimización de procesos y logística",
@@ -116,6 +117,7 @@
       "hero.tagline": "We optimize production chains and logistics through science, data, and continuous improvement.",
       "hero.cta_services": "View services",
       "hero.cta_team": "Meet the team",
+      "hero.cta_demos": "See demos",
 
       "about.label": "Who we are",
       "about.title": "A research group in process and logistics optimization",
