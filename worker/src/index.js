@@ -10,6 +10,8 @@ const ALLOWED_ORIGINS = new Set([
   "http://127.0.0.1:8787",
   "http://localhost:8080", // python -m http.server (front local)
   "http://127.0.0.1:8080",
+  "https://www.ispylogistica.com",
+  "https://ispylogistica.com",
 ]);
 
 function corsHeaders(origin) {

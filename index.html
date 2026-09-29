@@ -28,7 +28,7 @@
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
         <li><a href="#acerca" data-i18n="nav.about">Acerca de</a></li>
-        <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+        <li><a href="#proyectos" data-i18n="nav.research">Proyectos</a></li>
         <li><a href="#equipo" data-i18n="nav.team">Equipo</a></li>
         <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
         <li class="lang-switch">
@@ -50,7 +50,7 @@
           <p class="hero-sub" data-i18n="hero.tagline">Optimizamos la cadena de producción y la logística mediante ciencia, datos y mejora continua.</p>
           <div class="hero-actions">
             <a href="#demos" class="btn btn-primary" data-i18n="hero.cta_demos">Ver demos</a>
-            <a href="#servicios" class="btn btn-outline" data-i18n="hero.cta_services">Ver servicios</a>
+            <a href="#proyectos" class="btn btn-outline" data-i18n="hero.cta_research">Ver proyectos</a>
             <a href="#equipo" class="btn btn-outline" data-i18n="hero.cta_team">Conocer el equipo</a>
           </div>
         </div>
@@ -94,88 +94,41 @@
       </div>
     </section>
 
-    <section class="section section-alt" id="servicios">
+    <section class="section section-alt" id="proyectos">
       <div class="container">
         <div class="section-head" data-reveal>
-          <p class="section-label" data-i18n="services.label">Servicios</p>
-          <h2 class="section-title" data-i18n="services.title">Lo que ofrecemos</h2>
-          <p class="section-sub" data-i18n="services.subtitle">Soluciones orientadas a resultados a lo largo de toda la cadena de producción y logística.</p>
+          <p class="section-label" data-i18n="research.label">Proyectos</p>
+          <h2 class="section-title" data-i18n="research.title">Problemas reales, resueltos con optimización</h2>
+          <p class="section-sub" data-i18n="research.subtitle">De la teoría a la implementación en planta, con datos reales.</p>
         </div>
         <div class="cards-grid" data-reveal>
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4"/><path d="M12 11v10"/><rect x="16.5" y="16.5" width="4.5" height="4.5" rx="1"/></svg>
             </div>
-            <h3 data-i18n="services.one_t">Modelado y optimización matemática</h3>
-            <p data-i18n="services.one_d">Formulamos y resolvemos modelos de programación matemática (MILP, programación disyuntiva) para decidir sobre producción, carga y distribución.</p>
+            <h3 data-i18n="research.one_t">Scheduling y planificación de producción</h3>
+            <p data-i18n="research.one_d">Optimización matemática para agendas semanales ejecutables: inicios, fines, secuencias, precedencias y órdenes tardías, asignando mano de obra compartida a los equipos. Considera prioridades, disponibilidad e inactividad de equipos. Integrada en plataforma web con datos de planta e IoT, KPIs y monitoreo del desempeño.</p>
           </article>
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 7h.01M7 17h.01M11 7h6M11 17h6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4h14v11H1z"/><path d="M15 8h4l3 3v4h-7"/><circle cx="5" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path d="M2.5 21.5h6" stroke-dasharray="1.5 2"/></svg>
             </div>
-            <h3 data-i18n="services.two_t">Simulación de operaciones</h3>
-            <p data-i18n="services.two_d">Simulamos la operación hora a hora en depósitos y despachos para anticipar faltantes de espacio, quiebres de stock y cuellos de botella.</p>
+            <h3 data-i18n="research.two_t">Transporte, carga y descarga</h3>
+            <p data-i18n="research.two_d">La planificación asumía camiones y pallets idénticos, pero la flota tercerizada es heterogénea: el depósito rearmaba el 40% de las cargas en playa, con riesgo de multas por peso por eje. El modelo —programación disyuntiva generalizada— diseña la carga desde la flota disponible ese día, asignando cada pallet a camión y posición con peso, largo, estabilidad y carga por eje. Plan diario en 76 s en vez de 2 h, listo para ejecutar: se carga tal cual llega, sin rearmar y sin camión parado en muelle.</p>
           </article>
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><circle cx="6" cy="5" r="2"/><circle cx="18" cy="19" r="2"/><path d="M6 7v10M18 7v10M8 6h8M8 18h8"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/><path d="M3 8.5v7M21 8.5v7"/></svg>
             </div>
-            <h3 data-i18n="services.three_t">Optimización de carga y transporte</h3>
-            <p data-i18n="services.three_d">Diseñamos la carga en flotas heterogéneas respetando peso, largo, estabilidad y carga por eje, para maximizar la ocupación sin retoques en playa.</p>
+            <h3 data-i18n="research.three_t">Cadena de suministro bajo incertidumbre</h3>
+            <p data-i18n="research.three_d">Con 50 tipos de motor y criticidad distinta, el stock se replicaba cliente por cliente o cada falla esperaba días un repuesto de planta central; ignorar la incertidumbre dejaba 50% de probabilidad de incumplir. El modelo agrega demanda por zona, concentra el stock de seguridad en 2 depósitos con reparación y calcula el inventario mínimo por motor, ubicación y año según el servicio prometido —la demanda se dedujo del historial de fallas, sin pronóstico previo. Menos inventario total con igual servicio + taller de respaldo ante fallas críticas.</p>
           </article>
           <article class="card">
             <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M12 11v5"/><circle cx="18" cy="6" r="1.25"/></svg>
             </div>
-            <h3 data-i18n="services.four_t">Cadena de suministro bajo incertidumbre</h3>
-            <p data-i18n="services.four_d">Definimos dónde ubicar stock y talleres y cuánto inventario por producto y ubicación, con consolidación (risk pooling) y niveles de servicio.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><circle cx="12" cy="12" r="4"/><path d="M16 8h5V3"/></svg>
-            </div>
-            <h3 data-i18n="services.five_t">Planificación de producción y logística</h3>
-            <p data-i18n="services.five_d">Integramos producción, depósitos y despachos en un plan factible y evaluamos escenarios cambiando una sola fecha.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
-            </div>
-            <h3 data-i18n="services.six_t">Integración y analítica de datos</h3>
-            <p data-i18n="services.six_d">Integramos y normalizamos datos de múltiples sistemas para convertirlos en insumos del modelo y en decisiones basadas en evidencia.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="casos">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <p class="section-label" data-i18n="cases.label">Casos</p>
-          <h2 class="section-title" data-i18n="cases.title">Problemas reales, resueltos con optimización</h2>
-          <p class="section-sub" data-i18n="cases.subtitle">Desarrollos aplicados con datos reales de planta, presentados en HackIA · Demo Day 2026.</p>
-        </div>
-        <div class="cards-grid" data-reveal>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4"/><path d="M12 11v10"/></svg>
-            </div>
-            <h3 data-i18n="cases.one_t">Simulador de depósito</h3>
-            <p data-i18n="cases.one_d">Caso: embotelladora de bebidas. En un turno el plan pedía despachar 24 pallets de un producto a las 16:00 y en las estibas había 15: el simulador lo detectó siete horas antes y propuso despachar los 15 disponibles y avisar por la diferencia.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4h14v11H1z"/><path d="M15 8h4l3 3v4h-7"/><circle cx="5" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
-            </div>
-            <h3 data-i18n="cases.two_t">Optimizador de carga de camiones</h3>
-            <p data-i18n="cases.two_d">Caso: embotelladora con flota tercerizada (camiones de 28 a 31,5 t y 14 a 15,5 m). El plan diario pasó de 2 horas a 76 segundos, las recargas en el piso de playa de 40% a 0 y la ocupación llegó al 99,1% con los ejes siempre en límite.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><circle cx="6" cy="5" r="2"/><circle cx="18" cy="19" r="2"/><path d="M6 7v10M18 7v10M8 6h8M8 18h8"/></svg>
-            </div>
-            <h3 data-i18n="cases.three_t">Supply chain con demanda incierta</h3>
-            <p data-i18n="cases.three_d">Caso: fábrica de motores eléctricos. Red real de 7 plantas y 27 clientes con 50 tipos de motor: el stock de seguridad se concentró en 2 puntos (en lugar de uno por cliente) y se sumó un taller de reparación para cubrir fallas críticas.</p>
+            <h3 data-i18n="research.four_t">Explicabilidad en modelos de optimización</h3>
+            <p data-i18n="research.four_d">Los planes óptimos se usan poco cuando nadie puede explicar por qué convienen: qué restricción manda, qué pasa si cambia un dato. Desarrollamos métodos que hacen interpretables los resultados —restricciones activas y análisis de sensibilidad— aplicados a nuestros modelos de scheduling, carga y supply chain. Resultados que operación entiende, confía y adopta.</p>
           </article>
         </div>
       </div>
