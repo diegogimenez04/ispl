@@ -5,30 +5,85 @@
     es: {
       "nav.home": "Inicio",
       "nav.about": "Acerca de",
-      "nav.research": "Proyectos",
+      "nav.investigation": "Investigación",
+      "nav.industry": "Industria",
+      "nav.courses": "Cursos",
       "nav.team": "Equipo",
       "nav.contact": "Contacto",
 
       "hero.eyebrow": "Optimización aplicada a la industria",
       "hero.title": "Ingeniería de Sistemas de <span>Procesos y Logística</span>",
-      "hero.tagline": "Optimizamos la cadena de producción y la logística mediante ciencia, datos y mejora continua.",
-      "hero.cta_research": "Ver proyectos",
-      "hero.cta_team": "Conocer el equipo",
-      "hero.cta_demos": "Ver demos",
+      "hero.tagline": "Desarrollamos modelos matemáticos, herramientas digitales y soluciones basadas en datos e inteligencia artificial para mejorar las decisiones en producción y logística.",
+      "hero.cta_projects": "Conocer nuestros proyectos",
+      "hero.cta_demos": "Explorar demos",
+      "hero.visual_label": "Grupo de investigación",
+      "hero.visual_title": "ISP&L",
+      "hero.visual_alt": "Logotipo de ISP&L con símbolos de almacén, transporte e industria",
+
+      "carousel.label": "Secciones del portafolio",
+      "carousel.controls": "Controles del portafolio",
+      "carousel.choose_section": "Elegir sección",
+      "carousel.previous": "Anterior",
+      "carousel.next": "Siguiente",
+      "carousel.pause_action": "Pausar reproducción automática",
+      "carousel.play_action": "Reanudar reproducción automática",
 
       "about.label": "Quiénes somos",
-      "about.title": "Un grupo de investigación en optimización de procesos y logística",
-      "about.lead": "El Grupo de Ingeniería de Sistemas de Procesos & Logística del IPQA (CONICET — Universidad Nacional de Córdoba) investiga y transfiere métodos de optimización matemática para mejorar sistemas productivos y logísticos.",
-      "about.p1": "Aplicamos programación matemática, simulación y analítica de datos a la planificación de la producción, la gestión de depósitos, la carga y distribución y el diseño de cadenas de suministro bajo incertidumbre.",
-      "about.p2": "Combinamos investigación de excelencia con implementación real: llevamos las herramientas a la operación, las validamos con datos de planta y publicamos los resultados en revistas científicas internacionales.",
-      "about.stat_years": "Años de trayectoria",
-      "about.stat_projects": "Proyectos y consultorías",
+      "about.title": "Investigación aplicada a problemas reales",
+      "about.summary": "Desarrollamos métodos y herramientas para mejorar sistemas productivos y logísticos mediante investigación, modelado matemático y análisis de datos.",
+      "about.lead": "Convertimos necesidades de negocio en herramientas inteligentes para tomar mejores decisiones.",
+      "about.p1": "Somos el Grupo de Ingeniería de Sistemas de Procesos & Logística del IPQA (CONICET — Universidad Nacional de Córdoba). Entendemos y sistematizamos las necesidades de cada organización para desarrollar modelos matemáticos que representen sus procesos y permitan evaluar alternativas.",
+      "about.p2": "Aplicamos inteligencia artificial para mejorar las predicciones, la eficiencia computacional y la interpretabilidad. Creamos soluciones a medida con herramientas open source, ejecutables localmente o en la nube, para reducir la dependencia de licencias costosas.",
       "about.stat_members": "Investigadores y colaboradores",
-      "about.stat_satisfaction": "Cliente satisfecho",
+      "cap.optimization": "Optimización",
+      "cap.optimization_desc": "Modelos matemáticos para tomar mejores decisiones.",
+      "cap.data": "Datos e inteligencia artificial",
+      "cap.data_desc": "Análisis y herramientas digitales para apoyar decisiones.",
+      "cap.process": "Procesos industriales",
+      "cap.process_desc": "Planificación y mejora de sistemas productivos.",
+      "cap.logistics": "Logística",
+      "cap.logistics_desc": "Planificación del transporte y uso de recursos.",
 
-      "research.label": "Proyectos",
-      "research.title": "Problemas reales, resueltos con optimización",
-      "research.subtitle": "De la teoría a la implementación en planta, con datos reales.",
+      "research.label": "Investigación",
+      "research.title": "Líneas de Investigación",
+      "research.subtitle": "Investigamos optimización de cadenas de suministro, logística, planes de cosecha y scheduling, además de la explicabilidad de modelos.",
+      "research.supply_chain": "Cadena de suministro",
+      "research.supply_chain_description": "Modelamos decisiones de abastecimiento, inventario y diseño de redes para evaluar alternativas bajo incertidumbre y niveles de servicio.",
+      "research.logistics": "Logística",
+      "research.logistics_description": "Desarrollo de herramientas computacionales basadas en programación matemática para optimizar procesos logísticos sustentables. Integra la planificación táctica y operativa del transporte de larga distancia, el dimensionamiento de flota, el ruteo y el armado de cargas, evaluando objetivos económicos y ambientales mediante Análisis de Ciclo de Vida, con herramientas integrables a los sistemas de las empresas.",
+      "research.harvest": "Planes de cosecha",
+      "research.harvest_description": "Optimización multiobjetivo de la planificación forestal para decidir tratamientos silvícolas, superficies de cosecha y flujos de madera, equilibrando el valor presente neto y el secuestro neto de CO₂. La formulación disyuntiva se transforma en un modelo MILP y se valida con datos de una empresa forestal de Misiones, Argentina, para analizar las compensaciones entre producción maderera y captura de carbono.",
+      "research.scheduling": "Scheduling",
+      "research.scheduling_description": "Desarrollo de herramientas inteligentes de soporte a la decisión para programar plantas batch multipropósito de la industria de procesos. Integra modelos surrogate basados en aprendizaje automático, optimización matemática y optimización inversa para generar programas de producción de alta calidad en menos tiempo, mejorar la escalabilidad de modelos MILP y recuperar criterios expertos desde datos históricos. La investigación contempla restricciones industriales reales y la integración de los métodos en un prototipo para su validación en entornos productivos.",
+      "industry.label": "Industria",
+      "industry.title": "Proyectos con la Industria",
+      "industry.subtitle": "El equipo ha colaborado con distintas empresas en proyectos de supply chain, logística y producción.",
+      "industry.family_supply": "Supply Chain y Logística",
+      "industry.family_production": "Producción",
+      "industry.project_redesign": "Rediseño y planificación de cadenas de suministro",
+      "industry.project_truck": "Optimización de la carga de camiones palletizada",
+      "industry.project_warehouse": "Simulación y generación de alertas en depósitos",
+      "industry.project_inventory": "Optimización de inventarios y stock de seguridad",
+      "industry.project_routing": "Planificación del transporte de cargas y ruteo",
+      "industry.project_scheduling": "Programación de la producción",
+      "industry.project_scrap": "Optimización del proceso y minimización de scrap",
+      "industry.production_project_1": "Proyecto 01",
+      "industry.production_project_2": "Proyecto 02",
+      "industry.production_project_3": "Proyecto 03",
+      "industry.project_details_coming_soon": "Los detalles de este proyecto se agregarán próximamente.",
+      "industry.detail_redesign": "Analizamos la estructura de la cadena y sus decisiones de abastecimiento para diseñar alternativas de planificación que coordinen la red, el inventario y el nivel de servicio. El trabajo se apoya en modelos matemáticos ajustados al problema de cada organización.",
+      "industry.detail_truck": "Desarrollamos un optimizador que asigna pallets a camiones y posiciones según la flota disponible, considerando peso, dimensiones, estabilidad y carga por eje. En el caso documentado, el plan diario pasó de dos horas de planificación manual a 76 segundos y dejó de requerir rearmado de cargas en playa.",
+      "industry.detail_warehouse": "Un simulador proyecta la ocupación del depósito hora a hora y anticipa quiebres de stock o falta de espacio para que el equipo pueda actuar antes de que afecten la operación.",
+      "industry.detail_inventory": "Modelamos la demanda incierta de repuestos por zona y nivel de criticidad para decidir dónde ubicar el stock de seguridad y cuánto mantener. El modelo busca el inventario mínimo compatible con los tiempos de respuesta acordados.",
+      "industry.detail_routing": "Desarrollamos herramientas de planificación táctica y operativa para transporte de larga distancia, dimensionamiento de flota y ruteo, considerando objetivos económicos y ambientales y su integración con los sistemas de la empresa.",
+      "industry.detail_scheduling": "Formulamos modelos de optimización para generar agendas semanales ejecutables, con secuencias, precedencias, prioridades y disponibilidad de equipos. La herramienta se integra en una plataforma web con datos de planta e IoT para monitorear el desempeño.",
+      "industry.detail_scrap": "Abordamos la optimización de procesos productivos para identificar decisiones operativas que reduzcan el scrap, respetando las restricciones propias del proceso y sus objetivos de producción.",
+      "industry.case1": "Caso 01",
+      "industry.case2": "Caso 02",
+      "industry.case3": "Caso 03",
+      "courses.label": "Formación",
+      "courses.title": "Cursos",
+      "courses.subtitle": "Capacitación en optimización matemática e inteligencia artificial aplicada a operaciones y supply chain.",
       "research.one_t": "Scheduling y planificación de producción",
       "research.one_d": "Optimización matemática para agendas semanales ejecutables: inicios, fines, secuencias, precedencias y órdenes tardías, asignando mano de obra compartida a los equipos. Considera prioridades, disponibilidad e inactividad de equipos. Integrada en plataforma web con datos de planta e IoT, KPIs y monitoreo del desempeño.",
       "research.two_t": "Transporte, carga y descarga",
@@ -37,6 +92,10 @@
       "research.three_d": "Con 50 tipos de motor y criticidad distinta, el stock se replicaba cliente por cliente o cada falla esperaba días un repuesto de planta central; ignorar la incertidumbre dejaba 50% de probabilidad de incumplir. El modelo agrega demanda por zona, concentra el stock de seguridad en 2 depósitos con reparación y calcula el inventario mínimo por motor, ubicación y año según el servicio prometido —la demanda se dedujo del historial de fallas, sin pronóstico previo. Menos inventario total con igual servicio + taller de respaldo ante fallas críticas.",
       "research.four_t": "Explicabilidad en modelos de optimización",
       "research.four_d": "Los planes óptimos se usan poco cuando nadie puede explicar por qué convienen: qué restricción manda, qué pasa si cambia un dato. Desarrollamos métodos que hacen interpretables los resultados —restricciones activas y análisis de sensibilidad— aplicados a nuestros modelos de scheduling, carga y supply chain. Resultados que operación entiende, confía y adopta.",
+      "course.title": "Optimización asistida por inteligencia artificial para la gestión de operaciones y supply chain",
+      "course.description": "Curso virtual de formación continua organizado por el IPQA. Enseña a formular y resolver problemas reales de operaciones y supply chain con optimización matemática y flujos de trabajo asistidos por IA, incluyendo modelos lineales y enteros, Python, solvers y casos prácticos.",
+      "course.instructors": "Dictado por Juan Ignacio Ramello, María Analía Rodríguez, Frank Cecilio Piedra Jimenez y Noelia Alasino.",
+      "course.link": "Ver curso",
 
       "demos.label": "Demos",
       "demos.title": "Así se ven las herramientas en acción",
@@ -58,6 +117,10 @@
       "team.bio4": "Licenciado en Ciencias de la Computación y candidato a PhD. Desarrolla herramientas computacionales, modelos de optimización y análisis de datos aplicados a problemas de producción y logística.",
       "team.role5": "Estudiante de Ciencias de la Computación · Tesis de licenciatura en curso",
       "team.bio5": "Estudiante de Ciencias de la Computación. Actualmente desarrolla su tesis de licenciatura sobre explicabilidad de los resultados de modelos de optimización.",
+      "team.role6": "Dr. en Ingeniería Química · Ciencia de datos y optimización",
+      "team.bio6": "Doctor en Ingeniería Química y científico de datos. Desarrolla soluciones de analítica, aprendizaje automático y optimización matemática para problemas de negocio, con experiencia en logística, banca, salud y consumo masivo.",
+      "team.role7": "Dra. en Ingeniería Química · Profesora e investigadora",
+      "team.bio7": "Doctora en Ingeniería Química e Ingeniera Química, es profesora titular e investigadora en la UNC. Su trabajo aborda el modelado y la optimización de procesos, el tratamiento de aguas residuales y la gestión de cadenas de suministro y residuos.",
 
       "contact.label": "Contacto",
       "contact.title": "¿Trabajamos juntos?",
@@ -94,30 +157,86 @@
     en: {
       "nav.home": "Home",
       "nav.about": "About",
-      "nav.research": "Projects",
+      "nav.investigation": "Research",
+      "nav.industry": "Industry",
+      "nav.courses": "Courses",
       "nav.team": "Team",
       "nav.contact": "Contact",
 
       "hero.eyebrow": "Optimization applied to industry",
       "hero.title": "Process Systems and <span>Logistics Engineering</span>",
-      "hero.tagline": "We optimize production chains and logistics through science, data, and continuous improvement.",
-      "hero.cta_research": "View projects",
-      "hero.cta_team": "Meet the team",
-      "hero.cta_demos": "See demos",
+      "hero.tagline": "We develop mathematical models, digital tools, and data and AI solutions to improve production and logistics decisions.",
+      "hero.cta_projects": "Explore our projects",
+      "hero.cta_demos": "Explore demos",
+      "hero.visual_label": "Research group",
+      "hero.visual_title": "ISP&L",
+      "hero.visual_alt": "ISP&L logo with warehouse, transportation, and industry symbols",
+
+      "carousel.label": "Portfolio sections",
+      "carousel.controls": "Portfolio controls",
+      "carousel.choose_section": "Choose a section",
+      "carousel.previous": "Previous",
+      "carousel.next": "Next",
+      "carousel.pause_action": "Pause automatic slide rotation",
+      "carousel.play_action": "Resume automatic slide rotation",
 
       "about.label": "Who we are",
-      "about.title": "A research group in process and logistics optimization",
-      "about.lead": "The Process Systems & Logistics Engineering Group at IPQA (CONICET — National University of Córdoba) researches and transfers mathematical optimization methods to improve production and logistics systems.",
-      "about.p1": "We apply mathematical programming, simulation, and data analytics to production planning, warehouse management, loading and distribution, and supply chain design under uncertainty.",
-      "about.p2": "We combine research excellence with real implementation: we bring the tools into the operation, validate them with plant data, and publish the results in international scientific journals.",
-      "about.stat_years": "Years of experience",
-      "about.stat_projects": "Projects and consultancies",
+      "about.title": "Research applied to real problems",
+      "about.summary": "We develop methods and tools to improve production and logistics systems through research, mathematical modeling, and data analysis.",
+      "about.lead": "We turn business needs into intelligent tools for better decision-making.",
+      "about.p1": "We are the Process Systems & Logistics Engineering Group at IPQA (CONICET — National University of Córdoba). We understand and structure each organization’s needs, then build mathematical models that represent its processes and help evaluate alternatives.",
+      "about.p2": "We apply artificial intelligence to improve predictions, computational efficiency, and interpretability. We create tailored solutions with open-source tools that can run locally or in the cloud, reducing reliance on costly licenses.",
       "about.stat_members": "Researchers and collaborators",
-      "about.stat_satisfaction": "Satisfied client",
+      "cap.optimization": "Optimization",
+      "cap.optimization_desc": "Mathematical models for better decisions.",
+      "cap.data": "Data and artificial intelligence",
+      "cap.data_desc": "Analysis and digital tools to support decisions.",
+      "cap.process": "Industrial processes",
+      "cap.process_desc": "Planning and improvement of production systems.",
+      "cap.logistics": "Logistics",
+      "cap.logistics_desc": "Transportation planning and resource use.",
 
-      "research.label": "Projects",
-      "research.title": "Real problems, solved with optimization",
-      "research.subtitle": "From theory to plant implementation, with real data.",
+      "research.label": "Research",
+      "research.title": "Research Lines",
+      "research.subtitle": "Our research covers supply chain optimization, logistics, harvest planning, scheduling, and model explainability.",
+      "research.supply_chain": "Supply chain",
+      "research.supply_chain_description": "We model sourcing, inventory, and network design decisions to evaluate alternatives under uncertainty and service level requirements.",
+      "research.supply_chain_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "research.logistics": "Logistics",
+      "research.logistics_description": "Developing mathematical-programming tools for sustainable logistics optimization. Integrates tactical and operational long-haul transport planning, fleet sizing, routing, and truck loading, balancing economic and environmental objectives using Life Cycle Assessment, with tools designed for integration into company systems.",
+      "research.harvest": "Harvest planning",
+      "research.harvest_description": "Multi-objective forest planning to select silvicultural treatments, harvest areas, and timber flows while balancing net present value and net CO₂ sequestration. The disjunctive formulation is reformulated as a MILP and validated with data from a forestry company in Misiones, Argentina, to analyze trade-offs between timber production and carbon capture.",
+      "research.scheduling": "Scheduling",
+      "research.scheduling_description": "Developing intelligent decision-support tools for scheduling multipurpose batch plants in the process industries. The work combines machine-learning surrogate models, mathematical optimization, and inverse optimization to generate high-quality production schedules faster, improve the scalability of MILP models, and infer expert decision criteria from historical data. It addresses real industrial constraints and integrates the methods into a prototype for validation in production settings.",
+      "industry.label": "Industry",
+      "industry.title": "Industry Projects",
+      "industry.subtitle": "The team has collaborated with companies on supply chain, logistics, and production projects.",
+      "industry.family_supply": "Supply Chain & Logistics",
+      "industry.family_production": "Production",
+      "industry.project_redesign": "Supply chain redesign and planning",
+      "industry.project_truck": "Palletized truck loading optimization",
+      "industry.project_warehouse": "Warehouse simulation and alerts",
+      "industry.project_inventory": "Inventory and safety stock optimization",
+      "industry.project_routing": "Freight transportation planning and routing",
+      "industry.project_scheduling": "Production scheduling",
+      "industry.project_scrap": "Process optimization and scrap minimization",
+      "industry.production_project_1": "Project 01",
+      "industry.production_project_2": "Project 02",
+      "industry.production_project_3": "Project 03",
+      "industry.project_details_coming_soon": "Details for this project will be added soon.",
+      "industry.detail_redesign": "We analyze the supply chain structure and sourcing decisions to develop planning alternatives that coordinate the network, inventory, and service levels. The work uses mathematical models tailored to each organization's problem.",
+      "industry.detail_truck": "We developed an optimizer that assigns pallets to trucks and positions based on the available fleet, accounting for weight, dimensions, stability, and axle loads. In the documented case, daily planning went from two hours of manual work to 76 seconds, and loads no longer needed to be rebuilt in the yard.",
+      "industry.detail_warehouse": "A simulator projects warehouse occupancy hour by hour and anticipates stockouts or space shortages, giving the team time to act before they affect operations.",
+      "industry.detail_inventory": "We modeled uncertain spare-parts demand by zone and criticality to determine where to place safety stock and how much to hold. The model seeks the minimum inventory compatible with the agreed response times.",
+      "industry.detail_routing": "We developed tactical and operational planning tools for long-haul transportation, fleet sizing, and routing, considering economic and environmental objectives and integration with company systems.",
+      "industry.detail_scheduling": "We formulated optimization models to generate executable weekly schedules, accounting for sequencing, precedence, priorities, and equipment availability. The tool is integrated into a web platform with plant and IoT data for performance monitoring.",
+      "industry.detail_scrap": "We address production process optimization to identify operational decisions that can reduce scrap while respecting process constraints and production objectives.",
+      "industry.case1": "Case 01",
+      "industry.case2": "Case 02",
+      "industry.case3": "Case 03",
+      "courses.label": "Training",
+      "courses.title": "Courses",
+      "courses.subtitle": "Training in mathematical optimization and artificial intelligence for operations and supply chain.",
       "research.one_t": "Production planning and scheduling",
       "research.one_d": "Mathematical optimization for executable weekly schedules: start/finish times, sequencing, precedence and late orders, assigning shared workforce to equipment. Considers priorities, equipment availability and downtime. Integrated into a web platform with plant/IoT data, KPIs and production monitoring.",
       "research.two_t": "Transportation, loading and unloading",
@@ -126,6 +245,10 @@
       "research.three_d": "With 50 motor types of varying criticality, stock was duplicated customer by customer, or each failure waited days for a spare from the central plant; ignoring uncertainty meant a 50% chance of missing the order. The model pools demand by zone, consolidates safety stock in 2 repair-capable depots, and computes minimum inventory per motor, location and year for the promised service —demand inferred from failure history, with no prior forecast. Less total inventory at the same service level + backup shop for critical failures.",
       "research.four_t": "Explainability in optimization models",
       "research.four_d": "Optimal plans go unused when no one can explain why they win: which constraint binds, what happens if data changes. We develop methods that make results interpretable —binding constraints and sensitivity analysis— applied to our scheduling, loading and supply-chain models. Results operations understands, trusts and adopts.",
+      "course.title": "AI-assisted optimization for operations and supply chain management",
+      "course.description": "Virtual continuing education course organized by IPQA. It teaches participants to formulate and solve real operations and supply chain problems with mathematical optimization and AI-assisted workflows, including linear and integer models, Python, solvers, and practical cases.",
+      "course.instructors": "Taught by Juan Ignacio Ramello, María Analía Rodríguez, Frank Cecilio Piedra Jimenez, and Noelia Alasino.",
+      "course.link": "View course",
 
       "demos.label": "Demos",
       "demos.title": "See the tools in action",
@@ -147,6 +270,10 @@
       "team.bio4": "Holds a B.Sc. in Computer Science and is a PhD candidate, building computational tools, optimization models, and data analytics applied to production and logistics problems.",
       "team.role5": "Computer Science student · Bachelor's thesis in progress",
       "team.bio5": "Computer Science student currently working on his bachelor's thesis on explainability of optimization model results.",
+      "team.role6": "PhD in Chemical Engineering · Data science and optimization",
+      "team.bio6": "PhD in Chemical Engineering and data scientist. He develops analytics, machine learning, and mathematical optimization solutions for business problems, with experience in logistics, banking, healthcare, and consumer goods.",
+      "team.role7": "PhD in Chemical Engineering · Professor and researcher",
+      "team.bio7": "PhD and BSc in Chemical Engineering, she is a full professor and researcher at UNC. Her work focuses on process modeling and optimization, wastewater treatment, and supply chain and waste management.",
 
       "contact.label": "Contact",
       "contact.title": "Shall we work together?",
@@ -186,6 +313,7 @@
 
   function applyLang(lang) {
     var dict = translations[lang] || translations.es;
+    currentLang = lang;
     document.documentElement.lang = lang;
 
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
@@ -202,10 +330,36 @@
       }
     });
 
+    document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-alt");
+      if (dict[key]) el.setAttribute("alt", dict[key]);
+    });
+
+    document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-aria");
+      if (dict[key]) {
+        el.setAttribute("aria-label", dict[key]);
+      }
+    });
+
+    document.querySelectorAll("[data-portfolio-dot]").forEach(function (dot) {
+      var slide = document.getElementById(dot.getAttribute("data-slide-target"));
+      var heading = slide && slide.querySelector(".section-title");
+      if (heading) dot.setAttribute("aria-label", heading.textContent.trim());
+    });
+
+    document.querySelectorAll("[data-portfolio-toggle-label]").forEach(function (label) {
+      var key = label.getAttribute("data-i18n");
+      if (dict[key]) {
+        label.textContent = dict[key];
+        label.closest("button").setAttribute("aria-label", dict[key]);
+      }
+    });
+
     var titleKey = lang === "en" ? "en" : "es";
     document.title = titleKey === "en"
-      ? "ISPL — Process Systems and Logistics Engineering"
-      : "ISPL — Ingeniería de Sistemas de Procesos y Logística";
+      ? "ISP&L — Process Systems and Logistics Engineering"
+      : "ISP&L — Ingeniería de Sistemas de Procesos y Logística";
 
     document.querySelectorAll(".lang-btn").forEach(function (btn) {
       btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
@@ -271,6 +425,121 @@
     sections.forEach(function (section) {
       sectionObserver.observe(section);
     });
+  }
+
+  /* ---------- Portfolio carousel ---------- */
+
+  var portfolioTrack = document.querySelector("[data-portfolio-track]");
+  if (portfolioTrack) {
+    var portfolioSlides = Array.from(portfolioTrack.querySelectorAll(".portfolio-slide"));
+    var expandableCards = Array.from(document.querySelectorAll('details[name="portfolio-cards"]'));
+    var portfolioPrev = document.querySelector("[data-portfolio-prev]");
+    var portfolioNext = document.querySelector("[data-portfolio-next]");
+    var portfolioToggle = document.querySelector("[data-portfolio-toggle]");
+    var portfolioDots = document.querySelector("[data-portfolio-dots]");
+    var portfolioCarousel = portfolioTrack.closest(".portfolio-carousel");
+    var prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var autoplayEnabled = !prefersReducedMotion;
+    var pointerInsideCarousel = false;
+    var focusInsideCarousel = false;
+    var dotButtons = [];
+
+    expandableCards.forEach(function (card) {
+      card.addEventListener("toggle", function () {
+        if (!card.open) return;
+        expandableCards.forEach(function (otherCard) {
+          if (otherCard !== card) otherCard.open = false;
+        });
+      });
+    });
+
+    if (portfolioDots) {
+      portfolioSlides.forEach(function (slide, index) {
+        var dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "portfolio-carousel-dot";
+        dot.setAttribute("data-portfolio-dot", "");
+        dot.setAttribute("data-slide-target", slide.id);
+        dot.setAttribute("aria-label", slide.querySelector(".section-title").textContent.trim());
+        dot.addEventListener("click", function () { goToPortfolioSlide(index); });
+        portfolioDots.appendChild(dot);
+        dotButtons.push(dot);
+      });
+    }
+
+    function currentPortfolioSlide() {
+      return Math.max(0, Math.min(portfolioSlides.length - 1, Math.round(portfolioTrack.scrollLeft / portfolioTrack.clientWidth)));
+    }
+
+    function updatePortfolioControls() {
+      var current = currentPortfolioSlide();
+      dotButtons.forEach(function (dot, index) {
+        dot.setAttribute("aria-current", index === current ? "true" : "false");
+      });
+    }
+
+    function goToPortfolioSlide(index) {
+      var target = (index + portfolioSlides.length) % portfolioSlides.length;
+      var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      portfolioTrack.scrollTo({ left: target * portfolioTrack.clientWidth, behavior: reduceMotion ? "auto" : "smooth" });
+    }
+
+    function updatePortfolioToggle() {
+      if (!portfolioToggle) return;
+      portfolioToggle.setAttribute("aria-pressed", autoplayEnabled ? "true" : "false");
+      var labelKey = autoplayEnabled ? "carousel.pause_action" : "carousel.play_action";
+      var label = portfolioToggle.querySelector("[data-portfolio-toggle-label]");
+      if (label) {
+        label.setAttribute("data-i18n", labelKey);
+        label.textContent = translations[currentLang] && translations[currentLang][labelKey]
+          ? translations[currentLang][labelKey]
+          : translations.es[labelKey];
+        portfolioToggle.setAttribute("aria-label", label.textContent);
+      }
+    }
+
+    if (portfolioPrev) portfolioPrev.addEventListener("click", function () {
+      goToPortfolioSlide(currentPortfolioSlide() - 1);
+    });
+    if (portfolioNext) portfolioNext.addEventListener("click", function () {
+      goToPortfolioSlide(currentPortfolioSlide() + 1);
+    });
+    if (portfolioToggle) portfolioToggle.addEventListener("click", function () {
+      autoplayEnabled = !autoplayEnabled;
+      updatePortfolioToggle();
+    });
+    if (portfolioCarousel) {
+      portfolioCarousel.addEventListener("pointerenter", function () { pointerInsideCarousel = true; });
+      portfolioCarousel.addEventListener("pointerleave", function () { pointerInsideCarousel = false; });
+      portfolioCarousel.addEventListener("focusin", function () { focusInsideCarousel = true; });
+      portfolioCarousel.addEventListener("focusout", function (event) {
+        focusInsideCarousel = portfolioCarousel.contains(event.relatedTarget);
+      });
+    }
+    portfolioTrack.addEventListener("scroll", updatePortfolioControls, { passive: true });
+    window.addEventListener("resize", updatePortfolioControls);
+    portfolioTrack.addEventListener("keydown", function (event) {
+      if (event.target !== portfolioTrack) return;
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        goToPortfolioSlide(currentPortfolioSlide() - 1);
+      } else if (event.key === "ArrowRight") {
+        event.preventDefault();
+        goToPortfolioSlide(currentPortfolioSlide() + 1);
+      }
+    });
+    if (portfolioSlides.length > 1) {
+      window.setInterval(function () {
+        if (!autoplayEnabled || pointerInsideCarousel || focusInsideCarousel || document.hidden) return;
+        goToPortfolioSlide(currentPortfolioSlide() + 1);
+      }, 7000);
+    }
+    var initialPortfolioIndex = portfolioSlides.findIndex(function (slide) {
+      return "#" + slide.id === window.location.hash;
+    });
+    if (initialPortfolioIndex > 0) portfolioTrack.scrollLeft = initialPortfolioIndex * portfolioTrack.clientWidth;
+    updatePortfolioToggle();
+    updatePortfolioControls();
   }
 
   /* ---------- Reveal on scroll ---------- */
